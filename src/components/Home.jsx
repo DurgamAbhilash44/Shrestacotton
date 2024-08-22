@@ -2,6 +2,7 @@ import React from 'react';
 import CottonFieldImage from '../assets/trees.jpg'; // Replace with your actual image path
 import QualityCottonImage from '../assets/trees.jpg'; // Replace with your actual image path
 import CottonProductsImage from '../assets/trees.jpg'; // Replace with your actual image path
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -20,24 +21,32 @@ const Home = () => {
           <p className="text-lg mb-6">
             Leading the way in high-quality cotton production. Discover our premium products and sustainable practices.
           </p>
-          <a href="/products" className="inline-block px-6 py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition">
+          <Link to="/products" className="inline-block px-6 py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition">
             Explore Our Products
-          </a>
+          </Link>
         </div>
       </section>
 
       {/* About Section */}
       <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-extrabold mb-6">
-            About Shresta Cotton Mill
-          </h2>
-          <p className="text-lg text-gray-700 mb-6">
-            At Shresta Cotton Mill, we are dedicated to producing high-quality cotton and cotton products. Our state-of-the-art facilities and commitment to sustainable practices ensure that we deliver the finest products to our customers.
-          </p>
-          <p className="text-lg text-gray-700">
-            With decades of experience in the cotton industry, we pride ourselves on our innovative approach and dedication to excellence. Learn more about our history and mission below.
-          </p>
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="p-8 bg-gray-100 border border-gray-300 rounded-lg shadow-md">
+            <h2 className="text-4xl font-extrabold mb-6 text-center">
+              About Shresta Cotton Mill
+            </h2>
+            <p className="text-lg text-gray-700 mb-6">
+              Shresta Cotton Mill is a leading name in the cotton industry, known for producing high-quality cotton and cotton products. Our commitment to quality and sustainability sets us apart, ensuring that every product we deliver meets the highest standards.
+            </p>
+            <p className="text-lg text-gray-700 mb-6">
+              Established over two decades ago, Shresta Cotton Mill has grown from a small operation into a modern facility with cutting-edge technology. We prioritize innovation, constantly updating our processes to ensure efficiency and environmental responsibility. 
+            </p>
+            <p className="text-lg text-gray-700 mb-6">
+              Our dedicated team of experts and professionals is committed to excellence. From sourcing the finest cotton to maintaining rigorous quality controls, we strive to deliver superior products that exceed expectations.
+            </p>
+            <p className="text-lg text-gray-700">
+              At Shresta Cotton Mill, we believe in sustainable practices that benefit both our customers and the environment. We are proud to be a part of a global community that values ethical production and responsible stewardship of natural resources.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -94,9 +103,9 @@ const Home = () => {
           <p className="text-lg mb-6">
             Have questions or want to learn more about our products? Contact us today!
           </p>
-          <a href="/contact" className="inline-block px-6 py-3 bg-white text-blue-600 font-bold rounded-lg hover:bg-gray-200 transition">
+          <Link to="/contact" className="inline-block px-6 py-3 bg-white text-blue-600 font-bold rounded-lg hover:bg-gray-200 transition">
             Contact Us
-          </a>
+          </Link>
         </div>
       </section>
     </div>
